@@ -124,3 +124,38 @@ where dea.continent is not null;
 
 select *
 from PercentPopulationVaccinatedView;
+
+
+
+-- For tableau vizualization
+
+--1
+Select  sum(new_cases) as "Total_cases", sum(new_deaths) as "Total_deaths", (sum(new_deaths)/nullif(sum(new_cases),0))*100 as "DeathsPerCases"
+From public."CovidDeaths"
+where continent is not null
+-- group by date
+order by 1,2;
+
+
+--2 
+
+Select location , sum(new_deaths) as "TotalDeathCount"
+From public."CovidDeaths"
+where continent is null and location not in ('World', 'European Union', 'International')
+group by  location
+order by "TotalDeathCount" desc;
+
+--3
+--Infection rate vs Population
+Select location , population, max(total_cases) as "HighestInfectionCount", (max(total_cases)/population)*100 as "PercentPopulationInfected"
+From public."CovidDeaths"
+-- where location like '%State%'
+group by population, location
+order by "PercentPopulationInfected" desc;
+
+--4 
+Select location , population, date , max(total_cases) as "HighestInfectionCount", (max(total_cases)/population)*100 as "PercentPopulationInfected"
+From public."CovidDeaths"
+-- where location like '%State%'
+group by location, Population,  date
+order by "PercentPopulationInfected" desc;
