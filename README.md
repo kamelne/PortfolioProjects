@@ -1,5 +1,9 @@
-# PortfolioProjects
+# Portfolio Projects
 
-Covid Data Exploration Tableau Visuals
+## Covid Data Explorationaspect 
+Explore up-to-date worldwide Covid 19 data downloaded from our word in data, [daily updated Coivd 19 data](https://ourworldindata.org/covid-deaths). Data was explored to create Tableau dashboard displaying different aspect and conculations derived from the raw data.
 
-https://public.tableau.com/app/profile/nizar1039/viz/CovidDataExploration_16880447925890/Sheet3?publish=yes
+[Tableau Dashboard](https://public.tableau.com/views/CovidDataExploration_16880447925890/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+## Nashville Housing Data
+Cleaned, transformed data related to housing data
