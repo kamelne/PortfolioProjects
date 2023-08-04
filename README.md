@@ -7,3 +7,6 @@ Explore up-to-date worldwide Covid 19 data downloaded from our word in data, [da
 
 ## Nashville Housing Data
 Cleaned, transformed data related to housing data
+
+## Movie Industry
+Used Python pandas, seaborn, numpy, and matplotlib libraries to upload, clean, and plot data to show correlations between the different data variables.
