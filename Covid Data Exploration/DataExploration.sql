@@ -88,7 +88,7 @@ from PopvsVac;
 drop table if exists PercentPopulationVaccinated;
 create table PercentPopulationVaccinated(
 	Continent text, 
-	ocation text, 
+	location text, 
 	Date date, 
 	Population numeric, 
 	New_vaccinations numeric,
